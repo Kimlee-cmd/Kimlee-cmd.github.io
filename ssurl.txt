@@ -1,1 +1,1 @@
-http://freezdytv.tk/api/search.php?key=okok&wd=
+http://freezdytv.tk/api/search.php?key=cctv&wd=
