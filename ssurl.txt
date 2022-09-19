@@ -1,1 +1,1 @@
-http://freezdytv.tk/api/search.php?key=cctv&wd=
+http://freezdytv.tk/api/search.php?key=yyds&wd=
