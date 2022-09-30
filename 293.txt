@@ -12,9 +12,9 @@
 	"gqjx": "http://123.56.222.84:2025/iphones/100.php?url=",
 	"mainurl": "https://alogin.oss-cn-beijing.aliyuncs.com/iphones.json",
 	"appid": "10000",
-	"version": "1.3.0",
+	"version": "1.3.2",
 	"headers": {
 		"host": "123.56.222.84:2025",
-		"User-Agent": "abcdefg"	
+		"User-Agent": "hahahha"	
 	}
 }
