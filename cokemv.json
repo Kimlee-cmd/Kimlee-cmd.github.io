@@ -8,16 +8,17 @@
     "pCfgJs": "https://cokemv.me/static/js/playerconfig.js",
     "pCfgJsR": "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
     "cateManual": {
+      "抖音电影": "5",
       "电影": "1",
-      "大陆剧": "13",
-      "香港剧": "16",
-      "韩国剧": "14",
-      "欧美剧": "32",
-      "日本剧": "15",
-      "台灣劇": "24",
-      "泰國劇": "25",
-      "动漫": "3",
-      "综艺": "29"
+      "大陸劇": "13",
+      "香港剧": "14",
+      "韩国剧": "15",
+      "欧美剧": "16",
+      "日本剧": "20",
+      "台灣劇": "21",
+      "泰國劇": "22",
+      "动漫": "4",
+      "综艺": "3"
     },
   
   // Home Summary ====================================================
@@ -29,7 +30,7 @@
     "homeVodMark": "//div[@class='module-item-note']/text()",
   
   // Category Summary ================================================
-    "cateUrl": "https://cokemv.me/index.php/vod/show/id/{cateId}.html",
+    "cateUrl": "https://cokemv.me/vodshow/{cateId}-{area}---{lang}----{catePg}---{year}.html",
     "cateVodNode": "//a[@class='module-poster-item module-item']",
     "cateVodName": "/@title",
     "cateVodId": "/@href",
@@ -38,7 +39,7 @@
     "cateVodMark": "//div[@class='module-item-note']/text()",
   
   // Category Details ================================================
-    "dtUrl": "https://cokemv.me/index.php/vod/detail/id/{vid}.html",
+    "dtUrl": "https://cokemv.me/voddetail/{vid}.html",
     "dtNode": "//div[@class='module module-info']",
     "dtName": "//div[@class='module-info-main']/div[@class='module-info-heading']/h1/text()",
     "dtNameR": "",
@@ -57,14 +58,14 @@
     "dtUrlNode": "//div[contains(@class, 'module-play-list')]",
     "dtUrlSubNode": "/div/a",
     "dtUrlId": "/@href",
-    "dtUrlIdR": "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlIdR": "/vodplay/(\\S+).html",
     "dtUrlName": "/span/text()",
     "dtUrlNameR": "",
-    "playUrl": "https://cokemv.me/index.php/vod/play/id/{playUrl}.html",
+    "playUrl": "https://cokemv.me/vodplay/{playUrl}.html",
     "playUa": "",
   
   // Search Results ==================================================
-    "searchUrl": "https://cokemv.me/index.php/vod/search/wd/{wd}.html",
+    "searchUrl": "https://cokemv.me/vodsearch/-------------.html?wd={wd}",
     "scVodNode": "json:list",
     "scVodName": "name",
     "scVodId": "id",
@@ -74,6 +75,44 @@
   
   // Filters =======================================================
     "filter": {
+      "5": [      // 抖音电影
+        {
+          "key": "lang",
+          "name": "语言",
+          "value": [
+            { "n": "全部", "v": "" },
+            { "n": "国语", "v": "國語" },
+            { "n": "英语", "v": "英語" },
+            { "n": "粤语", "v": "粵語" },
+            { "n": "闽南语", "v": "閩南語" },
+            { "n": "韩语", "v": "韓語" },
+            { "n": "日语", "v": "日語" },
+            { "n": "法语", "v": "法語" },
+            { "n": "德语", "v": "德語" },
+            { "n": "其它", "v": "其它" }
+          ]
+        },
+        {
+          "key": "year",
+          "name": "年份",
+          "value": [
+            { "n": "全部", "v": "" },
+            { "n": "2022", "v": "2022" },          
+            { "n": "2021", "v": "2021" },
+            { "n": "2020", "v": "2020" },
+            { "n": "2019", "v": "2019" },
+            { "n": "2018", "v": "2018" },
+            { "n": "2017", "v": "2017" },
+            { "n": "2016", "v": "2016" },
+            { "n": "2015", "v": "2015" },
+            { "n": "2014", "v": "2014" },
+            { "n": "2013", "v": "2013" },
+            { "n": "2012", "v": "2012" },
+            { "n": "2011", "v": "2011" },
+            { "n": "2010", "v": "2010" }
+          ]
+        }
+      ],
       "1": [      // 电影
         {
           "key": "area",
